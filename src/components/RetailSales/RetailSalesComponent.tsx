@@ -1,7 +1,11 @@
+import React from "react";
+import { ChartLine } from "./LineChart";
+
 const RetailSalesComponent = () => {
     return (
         <div className="retail-sales">
-            <h2>Retail Sales</h2>
+            <h6 className="text-left display-6">Retail Sales</h6>
+            <ChartLine />
         </div>
     )
 };

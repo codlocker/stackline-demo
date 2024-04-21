@@ -1,5 +1,6 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSelector, createSlice } from "@reduxjs/toolkit";
 import { ProductState } from "../types/product-state";
+import { SalesEntity } from "../types/sales-entity";
 
 const initialState: ProductState = {
     name: "Dummy",
@@ -19,7 +20,7 @@ const productSlice = createSlice({
             state.description = action.payload.subtitle;
             state.image = action.payload.image;
             state.tags = action.payload.tags;
-            state.sales = action.payload.sales;
+            state.sales = action.payload.sales
         }
     }
 });
