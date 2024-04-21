@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, Table, Row, Col } from "react-bootstrap";
+import { Card, Table } from "react-bootstrap";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 import { useAppSelector } from "../../types/hooks";
 import { RootState } from "../../store";

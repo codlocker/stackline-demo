@@ -1,7 +1,5 @@
-import { createSelector, createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { ProductState } from "../types/product-state";
-import { SalesEntity } from "../types/sales-entity";
-
 const initialState: ProductState = {
     name: "Dummy",
     image: "https://static.vecteezy.com/system/resources/previews/005/337/799/non_2x/icon-image-not-found-free-vector.jpg",
