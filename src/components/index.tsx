@@ -1,6 +1,6 @@
-import NavbarComponent from "./Navbar/NavbarComponent";
-import ProductInfoComponent from "./ProductInfo/ProductInfoComponent";
-import RetailSalesComponent from "./RetailSales/RetailSalesComponent";
-import WeeklySalesComponent from "./WeeklySales/WeeklySalesComponent";
+import NavbarComponent from "./Navbar/navbar-component";
+import ProductInfoComponent from "./ProductInfo/product-info-component";
+import RetailSalesComponent from "./RetailSales/retail-sales-component";
+import WeeklySalesComponent from "./WeeklySales/weekly-sales-component";
 
 export { NavbarComponent, ProductInfoComponent, RetailSalesComponent, WeeklySalesComponent }
