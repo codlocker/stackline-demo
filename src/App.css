@@ -1,0 +1,17 @@
+.App {
+  padding: 5;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.left-section {
+  flex: 0 0 30%;
+  padding: 2px;
+}
+
+.right-section {
+  flex: 0 0 70%;
+}
