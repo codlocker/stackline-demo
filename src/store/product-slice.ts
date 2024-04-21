@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { ProductState } from "../types/product-state";
+
+/* Set the initial state of the redux state */
 const initialState: ProductState = {
     name: "Dummy",
     image: "https://static.vecteezy.com/system/resources/previews/005/337/799/non_2x/icon-image-not-found-free-vector.jpg",
@@ -8,6 +10,9 @@ const initialState: ProductState = {
     sales: []
 }
 
+/*
+ * Slice creates the react redux component.
+ */
 const productSlice = createSlice({
     name: 'product',
     initialState: initialState,

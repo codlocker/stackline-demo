@@ -3,6 +3,9 @@ import Navbar from "react-bootstrap/Navbar";
 import { images } from "../../constants";
 import './navbar.scss'
 
+/*
+ * React functional component to generate product info data from state.
+ */
 const NavbarComponent = () => {
     return (
         <>

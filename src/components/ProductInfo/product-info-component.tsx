@@ -4,6 +4,9 @@ import { Card, Button } from "react-bootstrap";
 import { RootState } from "../../store";
 import "./product-info.scss";
 
+/*
+ * React functional component to generate product info data from state.
+ */
 const ProductInfoComponent = () => {
     const productName: string = useAppSelector((state: RootState) => state.product.name);
     const productImage: string = useAppSelector((state: RootState) => state.product.image);

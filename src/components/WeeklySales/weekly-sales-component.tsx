@@ -6,19 +6,24 @@ import { RootState } from "../../store";
 import { SalesEntity } from "../../types/sales-entity";
 import "./weekly-sales.scss";
 
+/*
+ * React functional component to generate weekly sales table.
+ */
 const WeeklySalesComponent = () => {
     const sales = useAppSelector((state: RootState) => state.product.sales);
     const [salesData, setSalesData] = useState<SalesEntity[]>(sales || []);
     useEffect(() => {
-        if(sales) {
+        if (sales) {
             setSalesData(sales);
         }
     }, [sales]);
-    
+
+    // Convert value into currency USD
     const convertToCurrency = (val: number) => {
         return val.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
     }
 
+    // Sort by params based on key prop from the table.
     const sortByParams = (prop: string, key: string) => {
         let sortedData: SalesEntity[] = [];
         switch (prop) {
@@ -94,7 +99,7 @@ const WeeklySalesComponent = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    { salesData.map((item, index) => (
+                    {salesData.map((item, index) => (
                         <tr key={index}>
                             <td>{item.weekEnding}</td>
                             <td>{convertToCurrency(item.retailSales)}</td>
@@ -102,7 +107,7 @@ const WeeklySalesComponent = () => {
                             <td>{item.unitsSold}</td>
                             <td>{convertToCurrency(item.retailerMargin)}</td>
                         </tr>
-                        ))
+                    ))
                     }
                 </tbody>
             </Table>

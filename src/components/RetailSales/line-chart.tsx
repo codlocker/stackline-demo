@@ -2,8 +2,11 @@ import { useState, useRef, ReactElement } from 'react';
 import { useAppSelector } from "../../types/hooks";
 import { RootState } from "../../store";
 import { Line } from 'react-chartjs-2';
-import 'chart.js/auto'; // ADD THIS
+import 'chart.js/auto';
 
+/*
+ * React fragment to generate line chart for the data.
+ */
 export const ChartLine = (): ReactElement => {
     const ref = useRef();
 
