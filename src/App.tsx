@@ -13,9 +13,9 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="App">
+    <div className="App bg-light">
       <NavbarComponent />
-      <Container>
+      <Container className='pt-4'>
         <div className='left-section'>
           <ProductInfoComponent />
         </div>

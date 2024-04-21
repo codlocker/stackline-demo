@@ -1,12 +1,16 @@
 import React from "react";
+import { Card } from "react-bootstrap";
 import { ChartLine } from "./LineChart";
 
 const RetailSalesComponent = () => {
     return (
-        <div className="retail-sales">
-            <h6 className="text-left display-6">Retail Sales</h6>
-            <ChartLine />
-        </div>
+        <Card className="retail-sales bg-white mb-4">
+            <Card.Body>
+                <Card.Title className="text-left display-6">Retail Sales</Card.Title>
+                <ChartLine />
+            </Card.Body>
+            
+        </Card>
     )
 };
 

@@ -9,6 +9,7 @@
 
 .left-section {
   flex: 0 0 30%;
+  padding: 2px;
 }
 
 .right-section {

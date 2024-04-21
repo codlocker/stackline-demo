@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppSelector } from "../../types/hooks";
-import { Card, Button, ButtonGroup } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { RootState } from "../../store";
 const ProductInfoComponent = () => {
     const productName: string = useAppSelector((state: RootState) => state.product.name);
@@ -17,7 +17,7 @@ const ProductInfoComponent = () => {
                 </Card.Text>
                 <div>
                     {
-                        productTags.map((item, index) => (
+                        productTags.map((item, _) => (
                             <Button variant="outline-dark" className="tag" size="sm">{item}</Button>
                         ))
                     }

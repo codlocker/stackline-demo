@@ -17,8 +17,9 @@ export const ChartLine = (): ReactElement => {
         (state: RootState) =>
             state.product.sales.map(sale => {
                 const date = new Date(sale.weekEnding);
-                const month = date.toLocaleString('en-UK', { month: 'short' });
-                return month;
+                const month = date.toLocaleString('en-US', { month: 'short' });
+                const year = date.getFullYear()
+                return `${month}-${year}`;
             }
         ));
     
@@ -29,13 +30,13 @@ export const ChartLine = (): ReactElement => {
                 label: 'Retail Sales',
                 data: retailSales,
                 fill: false,
-                borderColor: 'rgba(75,192,192,1)'
+                borderColor: '#00ACFC'
             },
             {
                 label: 'Wholesale Sales',
                 data: wholesaleSales,
                 fill: false,
-                borderColor: '#742774',
+                borderColor: '#939393',
             },
         ],
     };

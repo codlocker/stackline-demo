@@ -15,7 +15,6 @@ const productSlice = createSlice({
     initialState: initialState,
     reducers: {
         replaceData(state, action) {
-            console.log(action.payload);
             state.name = action.payload.title;
             state.description = action.payload.subtitle;
             state.image = action.payload.image;
