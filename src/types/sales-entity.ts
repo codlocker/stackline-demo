@@ -1,3 +1,5 @@
+// Sales Entity interface.
+
 export interface SalesEntity {
     weekEnding: string;
     retailSales: number;

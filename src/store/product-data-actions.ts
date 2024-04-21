@@ -1,6 +1,9 @@
 import axios from "axios";
 import { productActions } from "./product-slice";
 
+/*
+ * Async fetch handlers to retrieve JSON data file.
+ */
 async function fetchHandler(path:string) {
     try {
         const request = await axios.get(path)
@@ -15,7 +18,9 @@ async function fetchHandler(path:string) {
         return {};
     }
 }
-
+/*
+ * Fetch data json file.
+ */
 export const fetchdata = () => {
     return async (dispatch: any) => {
         const uri: string = process.env.REACT_APP_SOURCE_URI || ""
