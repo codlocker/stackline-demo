@@ -14,6 +14,10 @@ const WeeklySalesComponent = () => {
             setSalesData(sales);
         }
     }, [sales]);
+    
+    const convertToCurrency = (val: number) => {
+        return val.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
+    }
 
     const sortByParams = (prop: string, key: string) => {
         let sortedData: SalesEntity[] = [];
@@ -93,10 +97,10 @@ const WeeklySalesComponent = () => {
                     { salesData.map((item, index) => (
                         <tr key={index}>
                             <td>{item.weekEnding}</td>
-                            <td>{item.retailSales}</td>
-                            <td>{item.wholesaleSales}</td>
+                            <td>{convertToCurrency(item.retailSales)}</td>
+                            <td>{convertToCurrency(item.wholesaleSales)}</td>
                             <td>{item.unitsSold}</td>
-                            <td>{item.retailerMargin}</td>
+                            <td>{convertToCurrency(item.retailerMargin)}</td>
                         </tr>
                         ))
                     }
