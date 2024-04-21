@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { ChartLine } from "./LineChart";
+import { ChartLine } from "./line-chart";
 
 const RetailSalesComponent = () => {
     return (
