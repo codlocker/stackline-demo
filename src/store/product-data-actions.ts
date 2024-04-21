@@ -18,7 +18,8 @@ async function fetchHandler(path:string) {
 
 export const fetchdata = () => {
     return async (dispatch: any) => {
-        const data = await fetchHandler('http://localhost:3000/data.json');
+        const uri: string = process.env.REACT_APP_SOURCE_URI || ""
+        const data = await fetchHandler(uri);
         dispatch(productActions.replaceData(data));
     }
 }

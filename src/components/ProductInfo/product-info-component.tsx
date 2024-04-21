@@ -13,8 +13,8 @@ const ProductInfoComponent = () => {
         <Card className="px-2 mx-2">
             <Card.Img variant="top" src={ productImage } />
             <Card.Body>
-                <Card.Title>{ productName }</Card.Title>
-                <Card.Text>
+                <Card.Title className="text-center">{ productName }</Card.Title>
+                <Card.Text className="text-center">
                 { productDescription }
                 </Card.Text>
                 <div>
