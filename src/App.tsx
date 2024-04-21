@@ -3,7 +3,7 @@ import './App.css';
 import { NavbarComponent, ProductInfoComponent, RetailSalesComponent, WeeklySalesComponent } from "./components";
 import { Container } from "react-bootstrap";
 import { fetchdata } from "./store/product-data-actions";
-import { useAppDispatch, useAppSelector } from "./types/hooks";
+import { useAppDispatch } from "./types/hooks";
 
 function App() {
   const dispatch = useAppDispatch();
