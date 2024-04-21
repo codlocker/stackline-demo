@@ -15,6 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Live at [https://vercel.com/codlockers-projects/stackline-demo](https://vercel.com/codlockers-projects/stackline-demo)
 
 - Create a .env file with the following as source URI for the data model (data.json)
+   - REACT_APP_SOURCE_URI=<url>
 
 - Run ```npm i package.json```
 
